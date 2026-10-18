@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="kendaraan.html">Kendaraan</a>
+        <a href="booking.html">Booking</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="riwayat.html">Riwayat</a>
+        <a class="active" href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">AKUN PENGGUNA</p>
+            <h1>Profil Saya</h1>
+            <p>Kelola informasi akun pengguna AutoCare.</p>
+        </div>
+
+        <div class="profile-layout">
+            <section class="panel profile-summary">
+                <div class="avatar">U</div>
+                <h2>Pengguna AutoCare</h2>
+                <p class="muted">pengguna@email.com</p>
+                <a class="btn btn-outline" href="dashboard.html">Dashboard</a>
+            </section>
+
+            <section class="panel">
+                <h2>Informasi Profil</h2>
+                <form action="profil.html" method="get">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" value="Pengguna AutoCare" required>
+                    </div>
+
+                    <div class="form-group" style="margin-top:16px">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" value="pengguna@email.com" required>
+                    </div>
+
+                    <div class="form-group" style="margin-top:16px">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon">
+                    </div>
+
+                    <div class="form-group" style="margin-top:16px">
+                        <label for="alamat">Alamat</label>
+                        <textarea id="alamat" name="alamat" placeholder="Masukkan alamat"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn" type="submit">Simpan Perubahan</button>
+                        <a href="bantuan.html" class="btn btn-outline">Pusat Bantuan</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>

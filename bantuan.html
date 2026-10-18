@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="booking.html">Booking</a>
+        <a href="profil.html">Profil</a>
+        <a class="active" href="bantuan.html">Bantuan</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">KAMI SIAP MEMBANTU</p>
+            <h1>Pusat Bantuan</h1>
+            <p>Temukan informasi dasar untuk menggunakan layanan AutoCare.</p>
+        </div>
+
+        <section class="panel">
+            <h2>Pertanyaan Umum</h2>
+
+            <article class="help-item">
+                <h3>1. Bagaimana cara membuat booking servis?</h3>
+                <p>Buka halaman Booking Servis, pilih kendaraan, jenis layanan, tanggal, waktu, dan workshop. Kemudian tekan tombol Kirim Booking.</p>
+                <a class="text-link" href="booking.html">Buka Booking Servis →</a>
+            </article>
+
+            <article class="help-item">
+                <h3>2. Bagaimana cara melihat jadwal servis?</h3>
+                <p>Buka halaman Jadwal Servis untuk melihat contoh daftar jadwal dan status booking.</p>
+                <a class="text-link" href="jadwal.html">Lihat Jadwal →</a>
+            </article>
+
+            <article class="help-item">
+                <h3>3. Bagaimana cara mengelola kendaraan?</h3>
+                <p>Buka halaman Kendaraan Saya untuk melihat formulir dan daftar kendaraan.</p>
+                <a class="text-link" href="kendaraan.html">Kelola Kendaraan →</a>
+            </article>
+
+            <article class="help-item">
+                <h3>4. Di mana saya dapat melihat riwayat servis?</h3>
+                <p>Halaman Riwayat Servis menampilkan contoh catatan perawatan dan biaya servis sebelumnya.</p>
+                <a class="text-link" href="riwayat.html">Lihat Riwayat →</a>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>Masih Membutuhkan Bantuan?</h2>
+            <p class="muted">Kirim pertanyaan melalui formulir berikut.</p>
+
+            <form action="bantuan.html" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input id="nama" name="nama" placeholder="Nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group form-full">
+                        <label for="pesan">Pertanyaan</label>
+                        <textarea id="pesan" name="pesan" placeholder="Tuliskan pertanyaan kamu" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Kirim Pertanyaan</button>
+                    <a href="dashboard.html" class="btn btn-outline">Kembali ke Dashboard</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>

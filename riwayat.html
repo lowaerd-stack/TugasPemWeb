@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Servis - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="kendaraan.html">Kendaraan</a>
+        <a href="booking.html">Booking</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a class="active" href="riwayat.html">Riwayat</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">CATATAN PERAWATAN</p>
+            <h1>Riwayat Servis</h1>
+            <p>Periksa layanan dan biaya servis kendaraan sebelumnya.</p>
+        </div>
+
+        <section class="stats-grid">
+            <article class="stat-card"><p>Total Servis</p><h2>2</h2></article>
+            <article class="stat-card"><p>Servis Selesai</p><h2>2</h2></article>
+            <article class="stat-card"><p>Kendaraan</p><h2>2</h2></article>
+            <article class="stat-card"><p>Catatan</p><h2>2</h2></article>
+        </section>
+
+        <section class="panel">
+            <h2>Catatan Servis Sebelumnya</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Tanggal</th><th>Kendaraan</th><th>Layanan</th><th>Workshop</th><th>Biaya</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>10/10/2026</td><td>Honda Vario</td><td>Ganti Oli</td><td>AutoCare Pusat</td><td>Rp85.000</td><td><span class="status status-success">Selesai</span></td></tr>
+                        <tr><td>02/10/2026</td><td>Toyota Avanza</td><td>Pemeriksaan Rem</td><td>AutoCare Cabang</td><td>Rp150.000</td><td><span class="status status-success">Selesai</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="form-actions">
+            <a class="btn" href="booking.html">Booking Servis Lagi</a>
+            <a class="btn btn-outline" href="dashboard.html">Kembali ke Dashboard</a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>

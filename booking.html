@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Servis - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="kendaraan.html">Kendaraan</a>
+        <a class="active" href="booking.html">Booking</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="riwayat.html">Riwayat</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">BOOKING ONLINE</p>
+            <h1>Pesan Servis Kendaraan</h1>
+            <p>Pilih kendaraan dan jadwalkan perawatan yang kamu butuhkan.</p>
+        </div>
+
+        <section class="panel">
+            <h2>Formulir Booking</h2>
+            <form action="jadwal.html" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="kendaraan">Pilih Kendaraan</label>
+                        <select id="kendaraan" name="kendaraan" required>
+                            <option value="">Pilih kendaraan</option>
+                            <option>Toyota Avanza - DK 1234 AB</option>
+                            <option>Honda Vario - DK 5678 CD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="layanan">Jenis Servis</label>
+                        <select id="layanan" name="layanan" required>
+                            <option value="">Pilih layanan</option>
+                            <option>Servis Berkala</option>
+                            <option>Ganti Oli</option>
+                            <option>Pemeriksaan Rem</option>
+                            <option>Perbaikan Mesin</option>
+                            <option>Pemeriksaan Umum</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Servis</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="waktu">Waktu Servis</label>
+                        <select id="waktu" name="waktu" required>
+                            <option value="">Pilih waktu</option>
+                            <option>09.00</option>
+                            <option>10.00</option>
+                            <option>11.00</option>
+                            <option>13.00</option>
+                            <option>14.00</option>
+                            <option>15.00</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-full">
+                        <label for="workshop">Pilih Workshop</label>
+                        <select id="workshop" name="workshop" required>
+                            <option value="">Pilih workshop</option>
+                            <option>AutoCare Pusat</option>
+                            <option>AutoCare Cabang</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-full">
+                        <label for="keluhan">Keluhan Kendaraan</label>
+                        <textarea id="keluhan" name="keluhan" placeholder="Jelaskan keluhan kendaraan kamu"></textarea>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Kirim Booking</button>
+                    <a href="dashboard.html" class="btn btn-outline">Batal</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>

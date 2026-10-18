@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendaraan Saya - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="kendaraan.html">Kendaraan</a>
+        <a href="booking.html">Booking</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="riwayat.html">Riwayat</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">GARASI SAYA</p>
+            <h1>Kendaraan Saya</h1>
+            <p>Kelola informasi kendaraan yang kamu daftarkan.</p>
+        </div>
+
+        <section class="panel">
+            <h2>Tambah Kendaraan</h2>
+            <form action="kendaraan.html" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama">Nama Kendaraan</label>
+                        <input id="nama" name="nama" placeholder="Contoh: Toyota Avanza" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jenis">Jenis Kendaraan</label>
+                        <select id="jenis" name="jenis" required>
+                            <option value="">Pilih jenis</option>
+                            <option>Mobil</option>
+                            <option>Motor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="plat">Nomor Polisi</label>
+                        <input id="plat" name="plat" placeholder="Contoh: DK 1234 AB" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tahun">Tahun Kendaraan</label>
+                        <input id="tahun" name="tahun" type="number" min="1980" max="2026" placeholder="2024" required>
+                    </div>
+                    <div class="form-group form-full">
+                        <label for="catatan">Catatan</label>
+                        <textarea id="catatan" name="catatan" placeholder="Informasi tambahan kendaraan"></textarea>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn" type="submit">Simpan Kendaraan</button>
+                    <a href="dashboard.html" class="btn btn-outline">Kembali</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Daftar Kendaraan</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>No.</th><th>Nama Kendaraan</th><th>Jenis</th><th>Nomor Polisi</th><th>Tahun</th><th>Aksi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Toyota Avanza</td><td>Mobil</td><td>DK 1234 AB</td><td>2022</td><td><a class="text-link" href="#form">Edit</a></td></tr>
+                        <tr><td>2</td><td>Honda Vario</td><td>Motor</td><td>DK 5678 CD</td><td>2023</td><td><a class="text-link" href="#form">Edit</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="muted">Data di atas adalah contoh tampilan. Simpan, edit, dan hapus belum memproses data secara otomatis.</p>
+        </section>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>

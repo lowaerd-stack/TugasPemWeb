@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Servis - AutoCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
+    <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="kendaraan.html">Kendaraan</a>
+        <a href="booking.html">Booking</a>
+        <a class="active" href="jadwal.html">Jadwal</a>
+        <a href="riwayat.html">Riwayat</a>
+        <a href="profil.html">Profil</a>
+    </nav>
+</header>
+
+<main class="page">
+    <div class="container">
+        <div class="page-header">
+            <p class="tagline">JADWAL PERAWATAN</p>
+            <h1>Jadwal Servis</h1>
+            <p>Periksa jadwal dan status booking kendaraanmu.</p>
+        </div>
+
+        <section class="stats-grid">
+            <article class="stat-card"><p>Total Jadwal</p><h2>3</h2></article>
+            <article class="stat-card"><p>Menunggu</p><h2>1</h2></article>
+            <article class="stat-card"><p>Dikonfirmasi</p><h2>1</h2></article>
+            <article class="stat-card"><p>Selesai</p><h2>1</h2></article>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <h2>Daftar Jadwal Servis</h2>
+                <a href="booking.html" class="btn">+ Booking Servis</a>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Kode Booking</th><th>Kendaraan</th><th>Layanan</th><th>Tanggal</th><th>Waktu</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>BK001</td><td>Toyota Avanza</td><td>Servis Berkala</td><td>25/10/2026</td><td>09.00</td><td><span class="status status-warning">Menunggu</span></td></tr>
+                        <tr><td>BK002</td><td>Honda Vario</td><td>Ganti Oli</td><td>10/10/2026</td><td>10.00</td><td><span class="status status-success">Selesai</span></td></tr>
+                        <tr><td>BK003</td><td>Toyota Avanza</td><td>Pemeriksaan Rem</td><td>02/10/2026</td><td>13.00</td><td><span class="status status-info">Dikonfirmasi</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="muted">Jadwal yang ditampilkan merupakan data contoh untuk rancangan antarmuka.</p>
+        </section>
+    </div>
+</main>
+
+<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+</body>
+</html>
