@@ -2,91 +2,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pusat Bantuan - AutoCare</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pusat Bantuan - AutoCare</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="app-page" data-page="bantuan">
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="dashboard.html">
+      <img src="assets/logo.png" alt="Logo AutoCare">
+      <span>AutoCare<small>SERVICE &amp; CARE</small></span>
+    </a>
 
-<header class="navbar">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="booking.html">Booking</a>
-        <a href="profil.html">Profil</a>
-        <a class="active" href="bantuan.html">Bantuan</a>
+    <p class="menu-label">MENU UTAMA</p>
+    <nav class="side-nav">
+      <a class="side-link" href="dashboard.html">▦ <span>Dashboard</span></a>
+      <a class="side-link" href="kendaraan.html">🚗 <span>Kendaraan Saya</span></a>
+      <a class="side-link" href="booking.html">＋ <span>Booking Servis</span></a>
+      <a class="side-link" href="jadwal.html">◷ <span>Jadwal Servis</span></a>
+      <a class="side-link" href="riwayat.html">▤ <span>Riwayat Servis</span></a>
+      <a class="side-link" href="profil.html">◎ <span>Profil Saya</span></a>
+      <a class="side-link active" href="bantuan.html">? <span>Pusat Bantuan</span></a>
     </nav>
-</header>
 
-<main class="page">
-    <div class="container">
-        <div class="page-header">
-            <p class="tagline">KAMI SIAP MEMBANTU</p>
-            <h1>Pusat Bantuan</h1>
-            <p>Temukan informasi dasar untuk menggunakan layanan AutoCare.</p>
+    <div class="sidebar-bottom">
+      <button class="side-link logout-button" data-logout>↪ <span>Keluar</span></button>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    <header class="app-topbar">
+      <button class="mobile-menu" data-sidebar-toggle aria-label="Buka menu">☰</button>
+      <div><span class="muted">Halaman /</span> Pusat Bantuan</div>
+      <a class="user-chip" href="profil.html">
+        <span class="avatar" data-avatar>U</span>
+        <span>
+          <strong data-user-name>Pengguna</strong>
+          <small>Pengguna AutoCare</small>
+        </span>
+      </a>
+    </header>
+
+    <div class="page-content">
+      <div class="welcome-row">
+        <div>
+          <p class="eyebrow">BANTUAN PENGGUNA</p>
+          <h1>Pusat Bantuan</h1>
+          <p>Temukan jawaban untuk pertanyaan seputar penggunaan AutoCare.</p>
+        </div>
+      </div>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+            <p>Informasi singkat untuk membantu penggunaan aplikasi.</p>
+          </div>
         </div>
 
-        <section class="panel">
-            <h2>Pertanyaan Umum</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Bagaimana cara mendaftarkan kendaraan?</summary>
+            <p>Buka menu Kendaraan Saya, isi nama kendaraan, merek, model, tahun, dan nomor plat. Setelah itu, tekan tombol Simpan Kendaraan.</p>
+          </details>
 
-            <article class="help-item">
-                <h3>1. Bagaimana cara membuat booking servis?</h3>
-                <p>Buka halaman Booking Servis, pilih kendaraan, jenis layanan, tanggal, waktu, dan workshop. Kemudian tekan tombol Kirim Booking.</p>
-                <a class="text-link" href="booking.html">Buka Booking Servis →</a>
-            </article>
+          <details class="faq-item">
+            <summary>Bagaimana cara melakukan booking servis?</summary>
+            <p>Buka menu Booking Servis, pilih kendaraan, jenis servis, tanggal, waktu, dan nama bengkel. Lengkapi catatan jika diperlukan, kemudian kirim booking.</p>
+          </details>
 
-            <article class="help-item">
-                <h3>2. Bagaimana cara melihat jadwal servis?</h3>
-                <p>Buka halaman Jadwal Servis untuk melihat contoh daftar jadwal dan status booking.</p>
-                <a class="text-link" href="jadwal.html">Lihat Jadwal →</a>
-            </article>
+          <details class="faq-item">
+            <summary>Di mana saya bisa melihat jadwal servis?</summary>
+            <p>Buka menu Jadwal Servis untuk melihat booking yang masih aktif.</p>
+          </details>
 
-            <article class="help-item">
-                <h3>3. Bagaimana cara mengelola kendaraan?</h3>
-                <p>Buka halaman Kendaraan Saya untuk melihat formulir dan daftar kendaraan.</p>
-                <a class="text-link" href="kendaraan.html">Kelola Kendaraan →</a>
-            </article>
+          <details class="faq-item">
+            <summary>Bagaimana cara melihat riwayat servis?</summary>
+            <p>Buka menu Riwayat Servis untuk melihat daftar booking beserta status yang tersimpan.</p>
+          </details>
 
-            <article class="help-item">
-                <h3>4. Di mana saya dapat melihat riwayat servis?</h3>
-                <p>Halaman Riwayat Servis menampilkan contoh catatan perawatan dan biaya servis sebelumnya.</p>
-                <a class="text-link" href="riwayat.html">Lihat Riwayat →</a>
-            </article>
-        </section>
+          <details class="faq-item">
+            <summary>Bagaimana cara mengubah informasi profil?</summary>
+            <p>Buka menu Profil Saya, ubah nama, email, atau nomor telepon, lalu tekan Simpan Perubahan.</p>
+          </details>
 
-        <section class="panel">
-            <h2>Masih Membutuhkan Bantuan?</h2>
-            <p class="muted">Kirim pertanyaan melalui formulir berikut.</p>
+          <details class="faq-item">
+            <summary>Apakah data tersimpan ketika halaman ditutup?</summary>
+            <p>Dalam prototipe ini, data disimpan menggunakan localStorage pada browser yang digunakan. Data tidak otomatis tersinkron ke perangkat atau browser lain.</p>
+          </details>
+        </div>
+      </section>
 
-            <form action="bantuan.html" method="get">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input id="nama" name="nama" placeholder="Nama lengkap" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
-                    </div>
-
-                    <div class="form-group form-full">
-                        <label for="pesan">Pertanyaan</label>
-                        <textarea id="pesan" name="pesan" placeholder="Tuliskan pertanyaan kamu" required></textarea>
-                    </div>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn">Kirim Pertanyaan</button>
-                    <a href="dashboard.html" class="btn btn-outline">Kembali ke Dashboard</a>
-                </div>
-            </form>
-        </section>
+      <section class="panel help-contact">
+        <div>
+          <h2>Masih membutuhkan bantuan?</h2>
+          <p>Hubungi pengelola AutoCare untuk mendapatkan informasi lebih lanjut.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:help@autocare.example">Hubungi Kami</a>
+      </section>
     </div>
-</main>
-
-<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+  </main>
+</div>
 </body>
 </html>

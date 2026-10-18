@@ -2,62 +2,111 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Servis - AutoCare</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Servis - AutoCare</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<header class="navbar">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
-    <nav class="nav-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="kendaraan.html">Kendaraan</a>
-        <a href="booking.html">Booking</a>
-        <a class="active" href="jadwal.html">Jadwal</a>
-        <a href="riwayat.html">Riwayat</a>
-        <a href="profil.html">Profil</a>
+<body class="app-page">
+  <aside class="sidebar">
+    <a href="dashboard.html" class="logo"><img src="assets/logo.png" alt="AutoCare"><span>AutoCare<small>SERVICE & CARE</small></span></a>
+    <p class="sidebar-label">MENU UTAMA</p>
+    <nav class="side-nav">
+      <a class="side-link" href="dashboard.html">▦ <span>Dashboard</span></a>
+      <a class="side-link" href="kendaraan.html">🚗 <span>Kendaraan Saya</span></a>
+      <a class="side-link" href="booking.html">＋ <span>Booking Servis</span></a>
+      <a class="side-link" href="jadwal.html">◷ <span>Jadwal Servis</span></a>
+      <a class="side-link" href="riwayat.html">▤ <span>Riwayat Servis</span></a>
+      <a class="side-link" href="profil.html">◎ <span>Profil Saya</span></a>
+      <a class="side-link active" href="bantuan.html">? <span>Pusat Bantuan</span></a>
     </nav>
-</header>
+    <div class="sidebar-bottom"><a href="index.html" class="side-link logout">↪ <span>Keluar</span></a></div>
+  </aside>
 
-<main class="page">
-    <div class="container">
-        <div class="page-header">
-            <p class="tagline">JADWAL PERAWATAN</p>
-            <h1>Jadwal Servis</h1>
-            <p>Periksa jadwal dan status booking kendaraanmu.</p>
-        </div>
+  <main class="app-main">
+    <header class="app-topbar"><div><span class="muted">Agenda perawatan</span><h2>Jadwal Servis</h2></div><div class="user-chip"><span class="avatar">A</span><div><strong>Andi Pratama</strong><small>Pengguna AutoCare</small></div></div></header>
 
-        <section class="stats-grid">
-            <article class="stat-card"><p>Total Jadwal</p><h2>3</h2></article>
-            <article class="stat-card"><p>Menunggu</p><h2>1</h2></article>
-            <article class="stat-card"><p>Dikonfirmasi</p><h2>1</h2></article>
-            <article class="stat-card"><p>Selesai</p><h2>1</h2></article>
-        </section>
+    <section class="page-intro"><div><h1>Jadwal Kendaraan</h1><p class="muted">Pantau jadwal servis yang telah kamu rencanakan.</p></div><a href="booking.html" class="btn btn-primary">+ Booking Baru</a></section>
 
-        <section class="panel">
-            <div class="section-heading">
-                <h2>Daftar Jadwal Servis</h2>
-                <a href="booking.html" class="btn">+ Booking Servis</a>
-            </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr><th>Kode Booking</th><th>Kendaraan</th><th>Layanan</th><th>Tanggal</th><th>Waktu</th><th>Status</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>BK001</td><td>Toyota Avanza</td><td>Servis Berkala</td><td>25/10/2026</td><td>09.00</td><td><span class="status status-warning">Menunggu</span></td></tr>
-                        <tr><td>BK002</td><td>Honda Vario</td><td>Ganti Oli</td><td>10/10/2026</td><td>10.00</td><td><span class="status status-success">Selesai</span></td></tr>
-                        <tr><td>BK003</td><td>Toyota Avanza</td><td>Pemeriksaan Rem</td><td>02/10/2026</td><td>13.00</td><td><span class="status status-info">Dikonfirmasi</span></td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="muted">Jadwal yang ditampilkan merupakan data contoh untuk rancangan antarmuka.</p>
-        </section>
+    <section class="stats-grid">
+      <article class="stat-card"><span>Total Jadwal</span><strong>03</strong><small>Semua agenda</small></article>
+      <article class="stat-card"><span>Menunggu</span><strong>01</strong><small>Belum dikerjakan</small></article>
+      <article class="stat-card"><span>Selesai</span><strong>02</strong><small>Servis terlaksana</small></article>
+    </section>
+
+    <section class="panel table-panel">
+      <div class="panel-heading"><div><h3>Daftar Jadwal</h3><p class="muted">Informasi agenda servis kendaraan</p></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tanggal</th><th>Kendaraan</th><th>Jenis Servis</th><th>Waktu</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>24 Okt 2026</td><td>Toyota Avanza</td><td>Servis Berkala</td><td>10.00 WIB</td><td><span class="status status-orange">Menunggu</span></td></tr>
+          <tr><td>10 Okt 2026</td><td>Honda Vario</td><td>Ganti Oli</td><td>09.00 WIB</td><td><span class="status status-green">Selesai</span></td></tr>
+          <tr><td>20 Sep 2026</td><td>Toyota Avanza</td><td>Pemeriksaan Mesin</td><td>13.00 WIB</td><td><span class="status status-green">Selesai</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    
+<!-- Tombol untuk demonstrasi manipulasi DOM -->
+<section class="dom-demo container">
+    <p class="eyebrow">FITUR INTERAKTIF</p>
+    <h2>Kenali AutoCare Lebih Dekat</h2>
+    <p>
+        Coba fitur interaktif berikut sebagai demonstrasi
+        JavaScript pada halaman landing page AutoCare.
+    </p>
+
+    <div class="dom-actions">
+        <button type="button" id="btnUbahTeks" class="btn btn-primary">
+            Ubah Informasi
+        </button>
+
+        <button type="button" id="btnTema" class="btn btn-outline">
+            Ubah Tema
+        </button>
+
+        <button type="button" id="fiturTambahan" class="btn btn-outline">
+            Tambah Fitur
+        </button>
     </div>
-</main>
+</section>
 
-<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+<!-- Area fitur yang dapat ditambahkan melalui DOM -->
+<section class="section container">
+    <div class="section-heading">
+        <h2 id="judulLanding">Servis Kendaraan Jadi Lebih Mudah</h2>
+        <p id="infoLanding">
+            Kelola kebutuhan servis kendaraan Anda dengan lebih praktis
+            melalui layanan AutoCare.
+        </p>
+    </div>
+
+    <div class="feature-grid" id="areaFitur">
+        <article class="feature-card">
+            <h3>Booking Servis</h3>
+            <p>
+                Jadwalkan servis kendaraan dengan mudah melalui
+                halaman pemesanan.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h3>Jadwal Servis</h3>
+            <p>
+                Lihat informasi jadwal servis kendaraan yang
+                sudah direncanakan.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h3>Riwayat Servis</h3>
+            <p>
+                Periksa catatan perawatan kendaraan Anda dalam
+                satu tempat.
+            </p>
+        </article>
+    </div>
+</section>
+
+  </main>
 </body>
 </html>

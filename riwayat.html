@@ -2,62 +2,50 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwayat Servis - AutoCare</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Servis - AutoCare</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<header class="navbar">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
-    <nav class="nav-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="kendaraan.html">Kendaraan</a>
-        <a href="booking.html">Booking</a>
-        <a href="jadwal.html">Jadwal</a>
-        <a class="active" href="riwayat.html">Riwayat</a>
-        <a href="profil.html">Profil</a>
+<body class="app-page">
+  <aside class="sidebar">
+    <a href="dashboard.html" class="logo"><img src="assets/logo.png" alt="AutoCare"><span>AutoCare<small>SERVICE & CARE</small></span></a>
+    <p class="sidebar-label">MENU UTAMA</p>
+    <nav class="side-nav">
+      <a class="side-link" href="dashboard.html">▦ <span>Dashboard</span></a>
+      <a class="side-link" href="kendaraan.html">🚗 <span>Kendaraan Saya</span></a>
+      <a class="side-link" href="booking.html">＋ <span>Booking Servis</span></a>
+      <a class="side-link" href="jadwal.html">◷ <span>Jadwal Servis</span></a>
+      <a class="side-link" href="riwayat.html">▤ <span>Riwayat Servis</span></a>
+      <a class="side-link" href="profil.html">◎ <span>Profil Saya</span></a>
+      <a class="side-link active" href="bantuan.html">? <span>Pusat Bantuan</span></a>
     </nav>
-</header>
+    <div class="sidebar-bottom"><a href="index.html" class="side-link logout">↪ <span>Keluar</span></a></div>
+  </aside>
 
-<main class="page">
-    <div class="container">
-        <div class="page-header">
-            <p class="tagline">CATATAN PERAWATAN</p>
-            <h1>Riwayat Servis</h1>
-            <p>Periksa layanan dan biaya servis kendaraan sebelumnya.</p>
-        </div>
+  <main class="app-main">
+    <header class="app-topbar"><div><span class="muted">Catatan perawatan</span><h2>Riwayat Servis</h2></div><div class="user-chip"><span class="avatar">A</span><div><strong>Andi Pratama</strong><small>Pengguna AutoCare</small></div></div></header>
 
-        <section class="stats-grid">
-            <article class="stat-card"><p>Total Servis</p><h2>2</h2></article>
-            <article class="stat-card"><p>Servis Selesai</p><h2>2</h2></article>
-            <article class="stat-card"><p>Kendaraan</p><h2>2</h2></article>
-            <article class="stat-card"><p>Catatan</p><h2>2</h2></article>
-        </section>
+    <section class="page-intro"><div><h1>Riwayat Perawatan</h1><p class="muted">Lihat catatan servis kendaraan yang pernah dilakukan.</p></div></section>
 
-        <section class="panel">
-            <h2>Catatan Servis Sebelumnya</h2>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr><th>Tanggal</th><th>Kendaraan</th><th>Layanan</th><th>Workshop</th><th>Biaya</th><th>Status</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>10/10/2026</td><td>Honda Vario</td><td>Ganti Oli</td><td>AutoCare Pusat</td><td>Rp85.000</td><td><span class="status status-success">Selesai</span></td></tr>
-                        <tr><td>02/10/2026</td><td>Toyota Avanza</td><td>Pemeriksaan Rem</td><td>AutoCare Cabang</td><td>Rp150.000</td><td><span class="status status-success">Selesai</span></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+    <section class="stats-grid">
+      <article class="stat-card"><span>Total Servis</span><strong>08</strong><small>Semua kendaraan</small></article>
+      <article class="stat-card"><span>Servis Tahun Ini</span><strong>05</strong><small>Tahun 2026</small></article>
+      <article class="stat-card"><span>Pengeluaran Tercatat</span><strong>Rp1,2 jt</strong><small>Contoh data</small></article>
+    </section>
 
-        <div class="form-actions">
-            <a class="btn" href="booking.html">Booking Servis Lagi</a>
-            <a class="btn btn-outline" href="dashboard.html">Kembali ke Dashboard</a>
-        </div>
-    </div>
-</main>
-
-<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+    <section class="panel table-panel">
+      <div class="panel-heading"><div><h3>Catatan Servis</h3><p class="muted">Riwayat perawatan kendaraanmu</p></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tanggal</th><th>Kendaraan</th><th>Jenis Servis</th><th>Biaya</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>10 Okt 2026</td><td>Honda Vario</td><td>Ganti Oli</td><td>Rp75.000</td><td><span class="status status-green">Selesai</span></td></tr>
+          <tr><td>20 Sep 2026</td><td>Toyota Avanza</td><td>Pemeriksaan Mesin</td><td>Rp250.000</td><td><span class="status status-green">Selesai</span></td></tr>
+          <tr><td>12 Agu 2026</td><td>Toyota Avanza</td><td>Servis Berkala</td><td>Rp450.000</td><td><span class="status status-green">Selesai</span></td></tr>
+          <tr><td>05 Jul 2026</td><td>Honda Vario</td><td>Servis Berkala</td><td>Rp150.000</td><td><span class="status status-green">Selesai</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+  </main>
 </body>
 </html>

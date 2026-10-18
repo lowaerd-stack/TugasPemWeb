@@ -2,94 +2,115 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Servis - AutoCare</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Servis - AutoCare</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<header class="navbar">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="AutoCare"></a>
-    <nav class="nav-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="kendaraan.html">Kendaraan</a>
-        <a class="active" href="booking.html">Booking</a>
-        <a href="jadwal.html">Jadwal</a>
-        <a href="riwayat.html">Riwayat</a>
-        <a href="profil.html">Profil</a>
+<body class="app-page" data-page="booking">
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="dashboard.html">
+      <img src="assets/logo.png" alt="Logo AutoCare">
+      <span>AutoCare<small>SERVICE &amp; CARE</small></span>
+    </a>
+    <p class="menu-label">MENU UTAMA</p>
+    <nav class="side-nav">
+      <a class="side-link" href="dashboard.html">▦ <span>Dashboard</span></a>
+      <a class="side-link" href="kendaraan.html">🚗 <span>Kendaraan Saya</span></a>
+      <a class="side-link active" href="booking.html">＋ <span>Booking Servis</span></a>
+      <a class="side-link" href="jadwal.html">◷ <span>Jadwal Servis</span></a>
+      <a class="side-link" href="riwayat.html">▤ <span>Riwayat Servis</span></a>
+      <a class="side-link" href="profil.html">◎ <span>Profil Saya</span></a>
+      <a class="side-link" href="bantuan.html">? <span>Pusat Bantuan</span></a>
     </nav>
-</header>
-
-<main class="page">
-    <div class="container">
-        <div class="page-header">
-            <p class="tagline">BOOKING ONLINE</p>
-            <h1>Pesan Servis Kendaraan</h1>
-            <p>Pilih kendaraan dan jadwalkan perawatan yang kamu butuhkan.</p>
-        </div>
-
-        <section class="panel">
-            <h2>Formulir Booking</h2>
-            <form action="jadwal.html" method="get">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="kendaraan">Pilih Kendaraan</label>
-                        <select id="kendaraan" name="kendaraan" required>
-                            <option value="">Pilih kendaraan</option>
-                            <option>Toyota Avanza - DK 1234 AB</option>
-                            <option>Honda Vario - DK 5678 CD</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="layanan">Jenis Servis</label>
-                        <select id="layanan" name="layanan" required>
-                            <option value="">Pilih layanan</option>
-                            <option>Servis Berkala</option>
-                            <option>Ganti Oli</option>
-                            <option>Pemeriksaan Rem</option>
-                            <option>Perbaikan Mesin</option>
-                            <option>Pemeriksaan Umum</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="tanggal">Tanggal Servis</label>
-                        <input type="date" id="tanggal" name="tanggal" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="waktu">Waktu Servis</label>
-                        <select id="waktu" name="waktu" required>
-                            <option value="">Pilih waktu</option>
-                            <option>09.00</option>
-                            <option>10.00</option>
-                            <option>11.00</option>
-                            <option>13.00</option>
-                            <option>14.00</option>
-                            <option>15.00</option>
-                        </select>
-                    </div>
-                    <div class="form-group form-full">
-                        <label for="workshop">Pilih Workshop</label>
-                        <select id="workshop" name="workshop" required>
-                            <option value="">Pilih workshop</option>
-                            <option>AutoCare Pusat</option>
-                            <option>AutoCare Cabang</option>
-                        </select>
-                    </div>
-                    <div class="form-group form-full">
-                        <label for="keluhan">Keluhan Kendaraan</label>
-                        <textarea id="keluhan" name="keluhan" placeholder="Jelaskan keluhan kendaraan kamu"></textarea>
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn">Kirim Booking</button>
-                    <a href="dashboard.html" class="btn btn-outline">Batal</a>
-                </div>
-            </form>
-        </section>
+    <div class="sidebar-bottom">
+      <button class="side-link logout-button" data-logout>↪ <span>Keluar</span></button>
     </div>
-</main>
+  </aside>
 
-<footer class="footer"><div class="footer-bottom">© 2026 AutoCare Service & Care.</div></footer>
+  <main class="app-main">
+    <header class="app-topbar">
+      <button class="mobile-menu" data-sidebar-toggle aria-label="Buka menu">☰</button>
+      <div><span class="muted">Halaman /</span> Booking Servis</div>
+      <a class="user-chip" href="profil.html">
+        <span class="avatar" data-avatar>U</span>
+        <span><strong data-user-name>Pengguna</strong><small>Pengguna AutoCare</small></span>
+      </a>
+    </header>
+
+    <div class="page-content">
+      <div class="welcome-row">
+        <div>
+          <p class="eyebrow">PEMESANAN SERVIS</p>
+          <h1>Booking Servis Baru</h1>
+          <p>Jadwalkan perawatan kendaraan tanpa harus datang langsung untuk mendaftar.</p>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <section class="panel">
+          <div class="panel-heading">
+            <div><h2>Form Booking</h2><p>Lengkapi informasi servis berikut.</p></div>
+          </div>
+
+          <form id="booking-form" class="form-grid">
+            <label class="span-2">Pilih Kendaraan
+              <select id="booking-vehicle" name="vehicleId" required>
+                <option value="">Pilih kendaraan</option>
+              </select>
+            </label>
+            <label class="span-2">Jenis Servis
+              <select name="service" required>
+                <option value="">Pilih jenis servis</option>
+                <option value="Servis Berkala">Servis Berkala</option>
+                <option value="Ganti Oli">Ganti Oli</option>
+                <option value="Perbaikan Mesin">Perbaikan Mesin</option>
+                <option value="Pemeriksaan Rem">Pemeriksaan Rem</option>
+                <option value="Pemeriksaan AC">Pemeriksaan AC</option>
+                <option value="Pemeriksaan Ban">Pemeriksaan Ban</option>
+                <option value="Servis Lainnya">Servis Lainnya</option>
+              </select>
+            </label>
+            <label>Tanggal Servis
+              <input id="service-date" name="date" type="date" required>
+            </label>
+            <label>Waktu Servis
+              <select name="time" required>
+                <option value="">Pilih waktu</option>
+                <option value="09:00">09.00</option>
+                <option value="10:00">10.00</option>
+                <option value="11:00">11.00</option>
+                <option value="13:00">13.00</option>
+                <option value="14:00">14.00</option>
+                <option value="15:00">15.00</option>
+              </select>
+            </label>
+            <label class="span-2">Nama Bengkel
+              <input name="workshop" type="text" placeholder="Masukkan nama bengkel tujuan" required>
+            </label>
+            <label class="span-2">Catatan Tambahan
+              <textarea name="note" placeholder="Jelaskan keluhan kendaraan jika ada"></textarea>
+            </label>
+            <button class="btn btn-primary span-2" type="submit">Kirim Booking Servis</button>
+          </form>
+          <p id="booking-message" class="inline-message" aria-live="polite"></p>
+        </section>
+
+        <aside class="panel booking-info">
+          <div class="feature-icon">🛠️</div>
+          <h2>Informasi Booking</h2>
+          <ul>
+            <li>Pastikan kendaraan sudah terdaftar pada menu Kendaraan Saya.</li>
+            <li>Pilih tanggal dan waktu sesuai ketersediaan bengkel.</li>
+            <li>Status awal booking adalah Menunggu.</li>
+            <li>Periksa halaman Jadwal Servis untuk memantau booking.</li>
+          </ul>
+          <a class="btn btn-outline btn-full" href="jadwal.html">Lihat Jadwal Servis</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
 </body>
 </html>
